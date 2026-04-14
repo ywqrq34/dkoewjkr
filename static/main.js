@@ -551,7 +551,7 @@
   var playBtn = document.getElementById('video-play-btn');
   var video   = document.getElementById('intro-video');
   if (!overlay || !video) return;
-  function start(e) { e.stopPropagation(); overlay.classList.add('hidden'); video.play(); }
+  function start(e) { e.stopPropagation(); overlay.classList.add('hidden'); video.controls = true; video.play(); }
   overlay.addEventListener('click', start);
   playBtn.addEventListener('click', start);
 })(); 
