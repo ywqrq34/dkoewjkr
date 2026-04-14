@@ -554,4 +554,4 @@
   function start(e) { e.stopPropagation(); overlay.classList.add('hidden'); video.play(); }
   overlay.addEventListener('click', start);
   playBtn.addEventListener('click', start);
-})();
+})(); 
