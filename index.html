@@ -1523,6 +1523,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </footer>
 
 <script src="./static/main.js"></script>
+<script>
+(function () {
+  var overlay = document.getElementById('video-overlay');
+  var playBtn = document.getElementById('video-play-btn');
+  var video   = document.getElementById('intro-video');
+  if (!overlay || !video) return;
+  function start(e) {
+    e.stopPropagation();
+    overlay.classList.add('hidden');
+    video.play();
+  }
+  overlay.addEventListener('click', start);
+  playBtn.addEventListener('click', start);
+})();
+</script>
 <!-- Smartlog -->
     <script type="text/javascript">
         var hpt_info={'_account':'UHPT-38029', '_server': 'a31'};
