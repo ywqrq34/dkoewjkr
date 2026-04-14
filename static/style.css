@@ -1235,11 +1235,12 @@ strong { font-weight: 700; }
   background-clip: text !important;
   font-size: 52px !important;
   font-weight: 900 !important;
-  line-height: 0.85;
+  line-height: 1.1;
   letter-spacing: -0.03em;
   display: inline-block;
   vertical-align: middle;
   margin: 0 2px;
+  padding-bottom: 4px;
 }
 /* "단계로 빠르게" 부분 */
 .how-section .sec-title .how-steps-txt {
@@ -2827,4 +2828,15 @@ strong { font-weight: 700; }
 .hero-layout,
 .hero-phone-col {
   overflow: visible !important;
+}
+.intro-video-section {
+  padding: 40px 0;
+  background: #fff;
+}
+.intro-video {
+  width: 100%;
+  display: block;
+  border-radius: 14px;
+  box-shadow: 0 8px 40px rgba(0, 137, 123, 0.15);
+  background: #000;
 }
