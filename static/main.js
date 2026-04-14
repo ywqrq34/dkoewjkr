@@ -546,3 +546,12 @@
   }
 
 })();
+(function () {
+  var overlay = document.getElementById('video-overlay');
+  var playBtn = document.getElementById('video-play-btn');
+  var video   = document.getElementById('intro-video');
+  if (!overlay || !video) return;
+  function start(e) { e.stopPropagation(); overlay.classList.add('hidden'); video.play(); }
+  overlay.addEventListener('click', start);
+  playBtn.addEventListener('click', start);
+})();
